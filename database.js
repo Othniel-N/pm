@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const connectDB = async () => {
   try {
     // Replace <password> with your actual MongoDB password
-    const conn = await mongoose.connect('mongodb+srv://othniel:<password>@pm.e1difni.mongodb.net/mydatabase?retryWrites=true&w=majority&appName=pm', {
+    const conn = await mongoose.connect('mongodb+srv://othniel:9865975475!Ao@pm.e1difni.mongodb.net/mydatabase?retryWrites=true&w=majority&appName=pm', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
