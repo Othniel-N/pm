@@ -4,6 +4,7 @@ const bcrypt = require('bcryptjs');
 const connectDB = require('./database');
 const User = require('./user');
 const loginRouter = require('./login');
+const passwordsRouter = require('./passwords');
 const app = express();
 const port = 3000;
 
@@ -15,6 +16,9 @@ app.use(bodyParser.json());
 
 // Use the login router
 app.use('/api', loginRouter);
+
+// Use the passwords router
+app.use('/api/user', passwordsRouter);
 
 // Endpoint to create a new user
 app.post('/user', async (req, res) => {
